@@ -11,4 +11,5 @@ headers=["symboling", "normalized-losses", "make", "fuel-type", "aspiration", "n
          "highway-mpg", "price"]
 
 df.columns = headers
-print(df)
+path = "/Users/ShreyamDuttaGupta/Desktop/automobile-data-set-analysis/cars.csv"
+df.to_csv(path)
