@@ -50,3 +50,13 @@ I'm planning to divide it in three parts:
 	  import seaborn as sns
 	  
 ## Analysis
+
+	  1) Histograms representing Binned prices in Low, Medium, High
+	  	<img src="charts/histograms.png" height="400" alt="Screenshot"/> 
+	  2) Boxplots representing effect of wheel frive with prices. 
+	  3) Scatter plot for Prices over Engine size
+	  4) Pivot table categorizing wheel drive and body style with prices. 
+	  5) HeatMap with wheel drive in y axis and body style in x axis. 
+	  6) Positive Linear Relationship between engine size and price
+	  7) Negetive Linear Relationship between highway-mpg and price
+	  8) Weak Correlation between peak-rpm and price
