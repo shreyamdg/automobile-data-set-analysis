@@ -19,12 +19,12 @@ headers=["symboling", "normalized-losses", "make", "fuel-type", "aspiration", "n
 df.columns = headers
 
 ##Exporting to csv
-"""
+'''
 
 path = "/Users/ShreyamDuttaGupta/Desktop/automobile-data-set-analysis/cars.csv"
 df.to_csv(path)
 
-"""
+'''
 
 ##Generating descriptive stats
 """
@@ -116,3 +116,20 @@ plt.ylabel
 plt.show()
 
 '''
+
+#Group by to visualize price based on drive-wheels and body style.
+
+df_test = df[["drive-wheels", "body-style", "price"]]
+df_group = df_test.groupby(['drive-wheels', 'body-style'], as_index = False).mean()
+
+#Pivot Table to visualize price based on drive-wheels and body style.
+
+df_pivot = df_group.pivot(index = 'drive-wheels', columns= 'body-style')
+print(df_pivot)
+
+
+#Heat Maps
+
+plt.pcolor(df_pivot, cmap='RdBu')
+plt.colorbar()
+plt.show()
