@@ -18,6 +18,8 @@ headers=["symboling", "normalized-losses", "make", "fuel-type", "aspiration", "n
 
 df.columns = headers
 
+#print(df.dtypes)
+
 ##Exporting to csv
 '''
 
@@ -49,8 +51,14 @@ df.to_csv(path)
 df["price"].replace('?',np.nan, inplace = True)
 df.dropna(subset=["price"], axis=0, inplace=True)
 df["price"] = df["price"].astype("int")
-#print(df.dtypes)
 
+##Data Formatting, converting peak-rpm from Object to Int, dropping NaN values
+
+df["peak-rpm"].replace('?',np.nan, inplace = True)
+df.dropna(subset=["peak-rpm"], axis=0, inplace=True)
+df["peak-rpm"] = df["peak-rpm"].astype("int")
+
+#print(df.info)
 
 
 ###Data Binning
@@ -111,14 +119,13 @@ plt.scatter(x,y)
 
 plt.title("Scatterplot of Engine Size vs Price")
 plt.xlabel("Engine Size")
-plt.ylabel
-("Price")
+plt.ylabel("Price")
 plt.show()
 
 '''
 
 #Group by to visualize price based on drive-wheels and body style.
-
+'''
 df_test = df[["drive-wheels", "body-style", "price"]]
 df_group = df_test.groupby(['drive-wheels', 'body-style'], as_index = False).mean()
 
@@ -133,3 +140,40 @@ print(df_pivot)
 plt.pcolor(df_pivot, cmap='RdBu')
 plt.colorbar()
 plt.show()
+
+'''
+
+#CORRELATION, Positive Linear Relationship between engine size and price
+'''
+
+sns.regplot(x='engine-size', y='price', data=df)
+plt.title("Scatterplot of Engine Size vs Price")
+plt.xlabel("Engine Size")
+plt.ylabel("Price")
+plt.ylim(0,)
+plt.show()
+
+'''
+
+#CORRELATION, Negetive Linear Relationship between highway-mpg and price
+'''
+
+sns.regplot(x='highway-mpg', y='price', data=df)
+plt.title("Scatterplot of highway-mpg vs price")
+plt.xlabel("highway-mpg")
+plt.ylabel("price")
+plt.ylim(0,)
+plt.show()
+
+'''
+
+# WEAK CORRELATION between peak-rpm and price
+
+
+sns.regplot(x='peak-rpm', y='price', data=df)
+plt.title("Scatterplot of peak-rpm vs price")
+plt.xlabel("peak-rpm")
+plt.ylabel("price")
+plt.ylim(0,)
+plt.show()
+
