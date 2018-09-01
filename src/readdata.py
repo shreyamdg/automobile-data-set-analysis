@@ -75,7 +75,7 @@ df.dropna(subset=["price-binned"], axis=0, inplace=True)
 '''
 
 ##Plotting Histogram from the binned value
-'''
+
 
 plt.hist(df["price"],bins=3)
 plt.title("Price Bins")
@@ -83,7 +83,7 @@ plt.xlabel("Count")
 plt.ylabel("Price")
 plt.show()
 
-'''
+
 
 #TURNING CATEGORICAL VARIABLES INTO QUANTITATIVE VARIABLES
 '''
@@ -103,15 +103,15 @@ print(drive_wheels_counts)
 '''
 
 #Box Plots
-'''
+
 
 sns.boxplot(x="drive-wheels", y="price", data=df)
 plt.show()
 
-'''
+
 
 #Scatterplot
-'''
+
 
 y=df["engine-size"]
 x=df["price"]
@@ -122,10 +122,10 @@ plt.xlabel("Engine Size")
 plt.ylabel("Price")
 plt.show()
 
-'''
+
 
 #Group by to visualize price based on drive-wheels and body style.
-'''
+
 df_test = df[["drive-wheels", "body-style", "price"]]
 df_group = df_test.groupby(['drive-wheels', 'body-style'], as_index = False).mean()
 
@@ -141,10 +141,10 @@ plt.pcolor(df_pivot, cmap='RdBu')
 plt.colorbar()
 plt.show()
 
-'''
+
 
 #CORRELATION, Positive Linear Relationship between engine size and price
-'''
+
 
 sns.regplot(x='engine-size', y='price', data=df)
 plt.title("Scatterplot of Engine Size vs Price")
@@ -153,10 +153,10 @@ plt.ylabel("Price")
 plt.ylim(0,)
 plt.show()
 
-'''
+
 
 #CORRELATION, Negetive Linear Relationship between highway-mpg and price
-'''
+
 
 sns.regplot(x='highway-mpg', y='price', data=df)
 plt.title("Scatterplot of highway-mpg vs price")
@@ -165,7 +165,7 @@ plt.ylabel("price")
 plt.ylim(0,)
 plt.show()
 
-'''
+
 
 # WEAK CORRELATION between peak-rpm and price
 
