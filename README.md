@@ -52,7 +52,7 @@ I'm planning to divide it in three parts:
 ## Analysis
 
 	  1) Histograms representing Binned prices in Low, Medium, High
-	  	<img src="charts/histograms.png" height="400" alt="Screenshot"/> 
+	  	![](charts/histograms.png)
 	  2) Boxplots representing effect of wheel frive with prices. 
 	  3) Scatter plot for Prices over Engine size
 	  4) Pivot table categorizing wheel drive and body style with prices. 
