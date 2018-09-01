@@ -51,12 +51,26 @@ I'm planning to divide it in three parts:
 	  
 ## Analysis
 
-	  1) Histograms representing Binned prices in Low, Medium, High
-	  	![](charts/histograms.png)
-	  2) Boxplots representing effect of wheel frive with prices. 
-	  3) Scatter plot for Prices over Engine size
-	  4) Pivot table categorizing wheel drive and body style with prices. 
-	  5) HeatMap with wheel drive in y axis and body style in x axis. 
-	  6) Positive Linear Relationship between engine size and price
-	  7) Negetive Linear Relationship between highway-mpg and price
-	  8) Weak Correlation between peak-rpm and price
+1) Histograms representing Binned prices in Low, Medium, High
+![](charts/histograms.png)
+
+2) Boxplots representing effect of wheel frive with prices. 
+![](charts/boxplots.png)
+
+3) Scatter plot for Prices over Engine size
+![](charts/scatter.png)
+
+4) Pivot table categorizing wheel drive and body style with prices. 
+![](charts/pivot.png)
+
+5) HeatMap with wheel drive in y axis and body style in x axis. 
+![](charts/heatmap.png)
+
+6) Positive Linear Relationship between engine size and price
+![](charts/positivelinear.png)
+
+7) Negetive Linear Relationship between highway-mpg and price
+![](charts/negetivelinear.png)
+
+8) Weak Correlation between peak-rpm and price
+![](charts/weakcorrelation.png)
