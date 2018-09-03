@@ -74,3 +74,7 @@ I'm planning to divide it in four parts:
 
 8) Weak Correlation between peak-rpm and price
 ![](charts/weakcorrelation.png)
+
+## Conclusion
+
+**Yet to be updated**
