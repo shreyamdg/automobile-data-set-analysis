@@ -3,6 +3,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.linear_model import LinearRegression
 
 url = "https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data"
 
@@ -76,13 +77,13 @@ df.dropna(subset=["price-binned"], axis=0, inplace=True)
 
 ##Plotting Histogram from the binned value
 
-
+'''
 plt.hist(df["price"],bins=3)
 plt.title("Price Bins")
 plt.xlabel("Count")
 plt.ylabel("Price")
 plt.show()
-
+'''
 
 
 #TURNING CATEGORICAL VARIABLES INTO QUANTITATIVE VARIABLES
@@ -104,7 +105,7 @@ print(drive_wheels_counts)
 
 #Box Plots
 
-
+'''
 sns.boxplot(x="drive-wheels", y="price", data=df)
 plt.show()
 
@@ -176,4 +177,50 @@ plt.xlabel("peak-rpm")
 plt.ylabel("price")
 plt.ylim(0,)
 plt.show()
+
+'''
+
+# Simple Linear Model Estimator with Distribution plot
+'''
+
+lm = LinearRegression()
+X=df[["highway-mpg"]]
+Y=df["price"]
+lm.fit(X,Y)
+Yhat1 = lm.predict(X)
+b0 = lm.intercept_
+b1 = lm.coef_
+estimated = b0 + b1*X
+
+ax1 = sns.distplot(df["price"],hist = False, color="r", label="Actual Value")
+sns.distplot(Yhat1, hist = False, color="b", label="Fitted Value", ax=ax1)
+plt.ylim(0,)
+plt.show()
+
+'''
+
+# Multiple Linear Regression with Distribution plot
+'''
+
+lm = LinearRegression()
+Z = df[["horsepower", "curb-weight", "engine-size", "highway-mpg"]]
+Y=df["price"]
+lm.fit(Z,Y)
+Y=df["price"]
+Yhat2 = lm.predict(Z)
+
+ax1 = sns.distplot(df["price"],hist = False, color="r", label="Actual Value")
+sns.distplot(Yhat2, hist = False, color="b", label="Fitted Value", ax=ax1)
+plt.ylim(0,)
+plt.show()
+
+'''
+
+# Residual Plot
+'''
+sns.residplot(df["highway-mpg"], df["price"])
+plt.xlabel("highway-mpg")
+plt.ylabel("price")
+plt.show()
+'''
 
