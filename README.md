@@ -4,7 +4,7 @@
 In this project I'm trying to analyze and visualize the used car prices from 
 the dataset available at https://archive.ics.uci.edu/ml/machine-learning-databases/autos/
 
-I'm planning to divide it in three parts: 
+I'm planning to divide it in four parts: 
 1) Data Wrangling
 	-pre processing data in python
 	-dealing missing values
