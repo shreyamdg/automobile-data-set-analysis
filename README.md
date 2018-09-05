@@ -1,10 +1,10 @@
 # automobile-data-set-analysis
 
 ## Data Analysis and Prediction of Car Prices based on used car prices data set.
-In this project I'm trying to analyze and visualize the used car prices from 
+In this project I'm trying to analyze and visualize the used car prices from
 the dataset available at https://archive.ics.uci.edu/ml/machine-learning-databases/autos/
 
-I'm planning to divide it in four parts: 
+I'm planning to divide it in four parts:
 1) Data Wrangling
 	-pre processing data in python
 	-dealing missing values
@@ -40,40 +40,40 @@ I'm planning to divide it in four parts:
       sports/speciality, etc...), and represents the average loss per car
       per year.
 
-	  
+
 ## Importing the Modules:
-	  
+
 	  import pandas as pd
 	  import numpy as np
 	  import math
 	  import matplotlib.pyplot as plt
 	  import seaborn as sns
-	  
+
 ## Analysis
 
 1) Histograms representing Binned prices in Low, Medium, High
-![](charts/histograms.png)
+![](figures/histograms.png)
 
-2) Boxplots representing effect of wheel frive with prices. 
-![](charts/boxplots.png)
+2) Boxplots representing effect of wheel frive with prices.
+![](figures/boxplots.png)
 
 3) Scatter plot for Prices over Engine size
-![](charts/scatter.png)
+![](figures/scatter.png)
 
-4) Pivot table categorizing wheel drive and body style with prices. 
-![](charts/pivot.png)
+4) Pivot table categorizing wheel drive and body style with prices.
+![](figures/pivot.png)
 
-5) HeatMap with wheel drive in y axis and body style in x axis. 
-![](charts/heatmap.png)
+5) HeatMap with wheel drive in y axis and body style in x axis.
+![](figures/heatmap.png)
 
 6) Positive Linear Relationship between engine size and price
-![](charts/positivelinear.png)
+![](figures/positivelinear.png)
 
 7) Negetive Linear Relationship between highway-mpg and price
-![](charts/negetivelinear.png)
+![](figures/negetivelinear.png)
 
 8) Weak Correlation between peak-rpm and price
-![](charts/weakcorrelation.png)
+![](figures/weakcorrelation.png)
 
 ## Conclusion
 
