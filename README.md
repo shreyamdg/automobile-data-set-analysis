@@ -78,10 +78,10 @@ I'm planning to divide it in four parts:
 ![](figures/weakcorrelation.png)
 
 9) Simple Linear Regression
-![](figures/Figure_2.png.png)
+![](figures/Figure_2.png)
 
 10) Multiple Linear Regression
-![](figures/Figure_1.png.png)
+![](figures/Figure_1.png)
 
 ## Conclusion
 
