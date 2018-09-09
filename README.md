@@ -17,7 +17,9 @@ I'm planning to divide it in four parts:
 	-analysis of variance
 	-correlation
 	-correlation stats
-3) Model Development(**to be updated**)
+3) Model Development
+	- Simple Linear Regression
+	- Multiple Linear Regression
 4) Model Evaluation(**to be updated**)
 
 
@@ -74,6 +76,12 @@ I'm planning to divide it in four parts:
 
 8) Weak Correlation between peak-rpm and price
 ![](figures/weakcorrelation.png)
+
+9) Simple Linear Regression
+![](figures/Figure_2.png.png)
+
+10) Multiple Linear Regression
+![](figures/Figure_1.png.png)
 
 ## Conclusion
 
