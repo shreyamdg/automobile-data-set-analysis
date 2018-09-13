@@ -181,7 +181,7 @@ plt.show()
 '''
 
 # Simple Linear Model Estimator with Distribution plot
-'''
+
 
 lm = LinearRegression()
 X=df[["highway-mpg"]]
@@ -197,7 +197,7 @@ sns.distplot(Yhat1, hist = False, color="b", label="Fitted Value", ax=ax1)
 plt.ylim(0,)
 plt.show()
 
-'''
+
 
 # Multiple Linear Regression with Distribution plot
 '''
