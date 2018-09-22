@@ -20,7 +20,9 @@ I'm planning to divide it in four parts:
 3) Model Development
 	- Simple Linear Regression
 	- Multiple Linear Regression
-4) Model Evaluation(**to be updated**)
+4) Model Evaluation
+	- Rgression Plots
+	- Distribution Plots
 
 
 ## Description:
