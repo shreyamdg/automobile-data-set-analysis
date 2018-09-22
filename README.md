@@ -21,7 +21,7 @@ I'm planning to divide it in four parts:
 	- Simple Linear Regression
 	- Multiple Linear Regression
 4) Model Evaluation
-	- Rgression Plots
+	- Regression Plots
 	- Distribution Plots
 
 
