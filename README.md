@@ -79,10 +79,11 @@ I'm planning to divide it in four parts:
 8) Weak Correlation between peak-rpm and price
 ![](figures/weakcorrelation.png)
 
-9) Simple Linear Regression
+
+9) Simple Linear Regression plot
 ![](figures/Figure_2.png)
 
-10) Multiple Linear Regression
+10) Multiple Linear Regression plot
 ![](figures/Figure_1.png)
 
 ## Conclusion
