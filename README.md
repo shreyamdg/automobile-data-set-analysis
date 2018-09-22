@@ -88,4 +88,5 @@ I'm planning to divide it in four parts:
 
 ## Conclusion
 
-**Yet to be updated**
+The distribution plot of Linear Regression and Multiple Regression technique shows how
+ the model predicts the prices of automobiles based on "horsepower", "curb-weight", "engine-size", "highway-mpg"
